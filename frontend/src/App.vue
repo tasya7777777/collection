@@ -111,5 +111,6 @@ img.avatar {
 }
 .checkbox input{
     display: inline;
+    width: auto;
 }
 </style>
