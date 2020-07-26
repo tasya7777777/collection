@@ -70,7 +70,7 @@ height: 100%;
    border-radius: 5px;
 
 }
-.piy input{
+.piy .box{
 box-sizing: border-box;
 display: block;
 margin-bottom: .5rem;
@@ -82,9 +82,7 @@ padding: 5px 10px;
 }
 .piy button{
     display: block;
-    background-color: rgb(131, 197,
-
-    17);
+    background-color: rgb(131, 197, 17);
     color: rgb(255, 255, 255);
     border-radius: 5px;
     outline: 0 none;
@@ -109,8 +107,7 @@ img.avatar {
     width: 40%;
     border-radius: 50%;
 }
-.checkbox input{
-    display: inline;
-    width: auto;
+.checkbox{
+    text-align: left;
 }
 </style>
