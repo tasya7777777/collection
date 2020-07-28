@@ -1,33 +1,6 @@
 <template>
-    <div id="app" class="container-fluid">
-        <div class="site-info">
-            <h1>engineering</h1>
-            <h3>Vue SpringBoot example</h3>
-        </div>
-        <nav>
-            <router-link class="btn btn-primary" to="/">Users</router-link>
-            <router-link class="btn btn-primary" to="/add">Add</router-link>
-            <router-link class="btn btn-primary" to="/search">Search</router-link>
-        </nav>
-        <br/>
+    <div id="App">
         <router-view/>
-            <div class="imgcontainer">
-                     <img src="img_avatar2.png" alt="Avatar" class="avatar">
-                   </div>
-               <div class="wrap"><form action="" class="piy">
-                 <h3 class="h3"> Please sign in</h3>
-                   <input id="userName" type="text" placeholder="name" class="box">
-                  <input id="userPassword" type="password" placeholder="password" class="box">
-                  <div class="checkbox">
-                     <label>
-                       <input type="checkbox" value="remember-me"> Remember me
-                     </label>
-                   </div>
-                 <button>
-                     log in
-                 </button>
-                 </form></div>
-
     </div>
 </template>
 
@@ -38,76 +11,144 @@ export default {
 </script>
 
 <style>
-.site-info {
-  color: blue;
-  margin-bottom: 20px;
-}
-
-.btn-primary {
-  margin-right: 5px;
-}
-
-.container-fluid {
-  text-align: center;
-}
 body {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-text-decoration: none;
-height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 80%;
+}
 
+.header {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
 }
-.wrap{
-   height: 100%;
-   display: flex;
-}
-.piy{
-   margin:  auto;
-   width: 20rem;
-   padding: 1rem;
-   box-shadow: 0 1px 4px rgba(0,0,0,0.3);
-   border-radius: 5px;
 
+.header img {
+    margin-right: 5%;
 }
-.piy .box{
-box-sizing: border-box;
-display: block;
-margin-bottom: .5rem;
-width: 100%;
-border-radius: 2px;
-outline: 0 none;
-border: 1px solid lightgray;
-padding: 5px 10px;
+
+.start_page_search {
+    width: 70%;
+    margin: 0 25px;
+    height: 25px;
+    border-radius: 20px;
+    outline: none;
+    position: relative;
 }
-.piy button{
-    display: block;
-    background-color: rgb(131, 197, 17);
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
-    outline: 0 none;
-    border: 0 none;
-    margin: auto;
-    padding: 10px 25px;
-}
-.piy button:hover {
-    background-color: #2ae085; /* Green */
-    color: white;
-  }
-html{
-height: 100%    ;
-}
-.imgcontainer {
+
+header a {
+    width: 10%;
+    text-decoration: none;
+    color: black;
     text-align: center;
-    margin: 24px 0 12px 0;
 }
 
-/* Avatar image */
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
+.register {
+    border-left: 1px solid black;
 }
-.checkbox{
-    text-align: left;
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nav_link {
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 15%;
+    border-left: 1px solid black;
+}
+
+.nav_link:first-child {
+    border-left: none;
+}
+
+.content_header {
+    background-image: url(http://placehold.it/450x200);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.start_header {
+    margin-top: 60px;
+    font-weight: 200;
+    font-size: 50px;
+    text-align: center;
+}
+
+.conternt_header_text {
+    font-size: 25px;
+    text-align: center;
+    line-height: 2;
+    height: 28vh;
+}
+
+.content_header {
+    text-align: center;
+}
+
+.cards {
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgba(102, 97, 97, .3);
+}
+
+.cards_header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.card_carusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    width: 28%;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card_name {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card_text {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.cards_header_seen {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    border-top: 2px solid rgba(102, 97, 97, .3);
+}
+
+.footer_nav_bar {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.adress_company,
+.companyName {
+    text-align: center;
 }
 </style>
