@@ -1,0 +1,164 @@
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.header img {
+    margin-right: 5%;
+}
+
+.start_page_search {
+    width: 70%;
+    margin: 0 25px;
+    height: 25px;
+    border-radius: 20px;
+    outline: none;
+    position: relative;
+}
+
+header a {
+    width: 10%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.register {
+    border-left: 1px solid black;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nav_link {
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 15%;
+    border-left: 1px solid black;
+}
+
+.nav_link:first-child {
+    border-left: none;
+}
+
+.content_header {
+    background-image: url(http://placehold.it/450x200);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.start_header {
+    margin-top: 60px;
+    font-weight: 200;
+    font-size: 50px;
+    text-align: center;
+}
+
+.conternt_header_text {
+    font-size: 25px;
+    text-align: center;
+    line-height: 2;
+    height: 28vh;
+}
+
+.content_header {
+    text-align: center;
+}
+
+* {box-sizing: border-box;}
+.product-item {
+  width: 100rem;
+  margin: 0 auto;
+  padding: 10px 10px 5px 10px;
+  border: 1px solid #eee;
+  background: white;
+  font-family: "Open Sans";
+  overflow: hidden;
+  transition: .4s linear;
+  align: center;
+}
+.product-img {transition: 1s ease-in-out;}
+.product-img:hover {transform: scale(1.1);}
+.product-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.product-list {margin-top: 15px;}
+.product-list h3 {
+  font-weight: 700;
+  color: #39404B;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 2;
+}
+.price {
+  color: #E34D38;
+  display: block;
+  margin-bottom: 12px;
+}
+.stars {
+  height: 14px;
+  line-height: 14px;
+  margin: 7px 0;
+}
+.stars:before {
+  content: "\f005\f005\f005\f005\f006";
+  color: #EFB71C;
+  font-size: 14px;
+  font-family: FontAwesome;
+}
+.actions {
+  border-top: 1px solid #eee;
+  padding-top: 4px;
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+}
+.actions:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.add-to-cart, .add-to-links {float: left;}
+.cart-button {
+  text-decoration: none;
+  color: #8C877C;
+  padding-right: 20px;
+  border-right: 1px solid #ddd;
+  transition: .4s linear;
+}
+.cart-button:before {
+  content: "\f07a";
+  font-family: FontAwesome;
+  margin-right: 10px;
+}
+.add-to-cart:hover .cart-button, .wishlist:hover, .compare:hover {color: #E34D38;}
+.wishlist, .compare {
+  color: #8C877C;
+  padding-left: 20px;
+  transition: .4s linear;
+}
+.wishlist:after, .compare:after {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 13px;
+}
+.wishlist:after {content: "\f004";}
+ .compare:after {content: "\f079";}
