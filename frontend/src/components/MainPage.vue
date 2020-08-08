@@ -23,16 +23,43 @@
             <div class="cards ">
                 <h3 class="cards_header ">Останні додані</h3>
                 <div class="card_carusel ">
+                
+                
+                <!-- <div class="card ">
+                        <img src="http://placehold.it/250x150 " alt=" ">
+                        <h4 class="card_name ">Featured One</h4>
+                        <p class="card_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
+                    </div>
+                    <div class="card ">
+                        <img src="http://placehold.it/250x150 " alt=" ">
+                        <h4 class="card_name ">Featured One</h4>
+                        <p class="card_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
+                    </div>
+                    <div class="card ">
+                        <img src="http://placehold.it/250x150 " alt=" ">
+                        <h4 class="card_name ">Featured One</h4>
+                        <p class="card_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
+                    </div> -->
+                
+                
+                
+                
+                
                 <div class="list row">
                         <div class="col-md-6">
-                    <h4>Cards List</h4>
+                
                                 <ul>
-                                    <li v-for="(card, index) in users" :key="index">
+                                    <li v-for="(card, index) in cards" :key="index">
                                         <router-link :to="{
                                                 name: 'card-details',
                                                 params: { card: card, id: card.id }
                                             }">
-                                                {{card.name}}
+                    <div class="card ">
+                        <img src="http://placehold.it/250x150 " alt=" ">
+                        <h4 class="card_name ">{{card.name}}</h4>
+                        <p class="card_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
+                    </div>
+                                                
                                         </router-link>
                                     </li>
                                 </ul>
@@ -93,6 +120,7 @@ export default {
       http
         .get("/cards")
         .then(response => {
+            console.log("response: ", response.data);
           this.cards = response.data; // JSON are parsed automatically.
           console.log(response.data);
         })
@@ -114,11 +142,7 @@ export default {
 
 <style>
 
-.list {
-  text-align: left;
-  max-width: 450px;
-  margin: auto;
-}
+
 body {
     box-sizing: border-box;
     margin: 0 auto;
