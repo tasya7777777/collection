@@ -11,7 +11,7 @@
                 </div>
                 <div class ="card_id">
                     <h3 class="card_id">
-                        <span class ="base" itemprop="card_id">{{this.card}}</span>
+                        <span class ="base" itemprop="card_id">{{this.card.id}}</span>
                     </h3>
                 </div>
                 <div class ="card_lot_id">
