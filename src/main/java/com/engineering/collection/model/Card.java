@@ -32,41 +32,84 @@ public class Card {
     public Card() {
     }
 
-    public Card(String name) {
+    public Card(long id, String name, String type, String available, String lotId, String description, String tags) {
+        this.id = id;
         this.name = name;
+        this.type = type;
+        this.available = available;
+        this.lotId = lotId;
+        this.description = description;
+        this.tags = tags;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getName() {
-        return this.name;
+    public String getType() {
+        return type;
     }
 
-    public void setType(String name) {
-        this.name = type;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public String getType() { return this.type; }
+    public String getAvailable() {
+        return available;
+    }
 
     public void setAvailable(String available) {
-        this.name = available;
+        this.available = available;
     }
 
-    public String getAvailable() { return this.available; }
+    public String getLotId() {
+        return lotId;
+    }
 
-    public void setLotId(String lotId) { this.name = lotId; }
+    public void setLotId(String lotId) {
+        this.lotId = lotId;
+    }
 
-    public String getLotId() { return this.lotId; }
+    public String getDescription() {
+        return description;
+    }
 
-    public void setDescription(String description) { this.name = description; }
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-    public String getDescription() { return this.description; }
+    public String getTags() {
+        return tags;
+    }
 
-    public void setTags(String tags) { this.name = tags; }
+    public void setTags(String tags) {
+        this.tags = tags;
+    }
 
-    public String getTags() { return this.tags; }
+    @Override
+    public String toString() {
+        return "Card{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", available='" + available + '\'' +
+                ", lotId='" + lotId + '\'' +
+                ", description='" + description + '\'' +
+                ", tags='" + tags + '\'' +
+                '}';
+    }
 }
 
 
