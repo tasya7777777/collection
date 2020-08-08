@@ -25,50 +25,26 @@
                 <div class="card_carusel ">
                 
                 
-                <!-- <div class="card ">
-                        <img src="http://placehold.it/250x150 " alt=" ">
-                        <h4 class="card_name ">Featured One</h4>
-                        <p class="card_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
-                    </div>
-                    <div class="card ">
-                        <img src="http://placehold.it/250x150 " alt=" ">
-                        <h4 class="card_name ">Featured One</h4>
-                        <p class="card_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
-                    </div>
-                    <div class="card ">
-                        <img src="http://placehold.it/250x150 " alt=" ">
-                        <h4 class="card_name ">Featured One</h4>
-                        <p class="card_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
-                    </div> -->
                 
                 
                 
                 
                 
-                <div class="list row">
-                        <div class="col-md-6">
-                
-                                <ul>
-                                    <li v-for="(card, index) in cards" :key="index">
+                                    <div class="card " v-for="(card, index) in cards" :key="index">
                                         <router-link :to="{
                                                 name: 'card-details',
                                                 params: { card: card, id: card.id }
                                             }">
-                    <div class="card ">
                         <img src="http://placehold.it/250x150 " alt=" ">
                         <h4 class="card_name ">{{card.name}}</h4>
                         <p class="card_text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
-                    </div>
                                                 
                                         </router-link>
-                                    </li>
-                                </ul>
+                                    </div>
                                 </div>
-                                        <div class="col-md-6">
+                                        <div >
                                             <router-view @refreshData="refreshList"></router-view>
                                         </div>
-                                    </div>
-                </div>
                 <h3 class="cards_header_seen ">Останні переглянуті</h3>
                 <div class="card_carusel ">
                     <div class="card ">
