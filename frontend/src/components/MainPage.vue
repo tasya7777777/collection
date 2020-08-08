@@ -15,7 +15,7 @@
           <div class="card" v-for="(card, index) in cards" :key="index" >
             <router-link
               :to="{name: 'card',
-                    params: { card: card}}">
+                    params: { id: card.id }}">
               <img src="http://placehold.it/250x150 " alt=" " />
               <h4 class="card_name">{{card.name}}</h4>
               <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>

@@ -1,5 +1,4 @@
 <template>
-    <div v-if="this.card">
         <div class="product_item">
             <div class="card_media">
                 <img src="https://st.violity.com/auction/big/auctions/98/20/62/98206237.jpg">
@@ -12,7 +11,7 @@
                 </div>
                 <div class ="card_id">
                     <h3 class="card_id">
-                        <span class ="base" itemprop="card_id">{{this.card.id}}</span>
+                        <span class ="base" itemprop="card_id">{{this.card}}</span>
                     </h3>
                 </div>
                 <div class ="card_lot_id">
@@ -45,11 +44,7 @@
 
             </div>
             </div>
-   </div>
-   <div v-else>
-    <br/>
-    <p>Please click on a card...</p>
-  </div>
+  
 </template>
 
 
@@ -120,7 +115,8 @@ margin-top:20px;
 
 export default {
   name: "card",
-  props: ["card"]
+  props: ["card"],
+  
 };
 </script>
 
