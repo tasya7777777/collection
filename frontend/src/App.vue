@@ -11,7 +11,10 @@
       </header>
        <nav class="nav_bar">
         <a href="# " class="nav_link">Вкладиші</a>
-        <a href="# " class="nav_link">Наклейки</a>
+        <a href="# " class="nav_link">
+            <router-link class ="stickers" to="/stickers"> Наклейки
+            </router-link>
+        </a>
         <a href="# " class="nav_link">Картинки</a>
         <a href="# " class="nav_link">Жувальні гумки</a>
         <a href="# " class="nav_link">Обгортки</a>

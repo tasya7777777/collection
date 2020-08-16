@@ -30,23 +30,17 @@
           <div class="card">
             <img src="http://placehold.it/250x150 " alt=" " />
             <h4 class="card_name">Featured One</h4>
-            <p
-              class="card_text"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
+            <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
           </div>
           <div class="card">
             <img src="http://placehold.it/250x150 " alt=" " />
             <h4 class="card_name">Featured One</h4>
-            <p
-              class="card_text"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
+            <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
           </div>
           <div class="card">
             <img src="http://placehold.it/250x150 " alt=" " />
             <h4 class="card_name">Featured One</h4>
-            <p
-              class="card_text"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
+            <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ullam.</p>
           </div>
         </div>
       </div>
@@ -134,8 +128,8 @@ export default {
 }
 
 .card {
-  min-width: 400px;
-  margin-right: 30px;
+  min-width: 250px;
+  margin-right: 50px;
   width: 28%;
 }
 
