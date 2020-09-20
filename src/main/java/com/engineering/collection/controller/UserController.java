@@ -41,7 +41,7 @@ public class UserController {
 	@PostMapping("/user")
 	public User postUser(@RequestBody User user) {
 
-		User _user = repository.save(new User(user.getName()));
+		User _user = repository.save(new User(user.getUserName()));
 		return _user;
 	}
 
@@ -69,7 +69,7 @@ public class UserController {
 
 		if (userData.isPresent()) {
 			User _user = userData.get();
-			_user.setName(user.getName());
+			_user.setUserName(user.getUserName());
 			return new ResponseEntity<>(repository.save(_user), HttpStatus.OK);
 		} else {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);

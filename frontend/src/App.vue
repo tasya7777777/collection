@@ -7,7 +7,8 @@
         <i class="material-icons">search</i>
         <input class="start_page_search" type="search " placeholder=" search " />
         <router-link class="login" to="/login">login</router-link>
-        <a href="# " class="register">register</a>
+        <router-link class="register" to="/register">register</router-link>
+
       </header>
        <nav class="nav_bar">
         <a href="# " class="nav_link">Вкладиші</a>

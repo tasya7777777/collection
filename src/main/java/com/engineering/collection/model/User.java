@@ -15,8 +15,8 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
-	@Column(name = "firstName")
-	private String name;
+	@Column(name = "userName")
+	private String userName;
 	@Column(name = "password")
 	private String password;
 	@Column(name = "email")
@@ -27,28 +27,28 @@ public class User {
 	public User() {
 	}
 
-	public User(String name) { this.name = name; }
+	public User(String userName) { this.userName = userName; }
 
 	public long getId() {
 		return id;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
-	public String getName() {
-		return this.name;
+	public String getUserName() {
+		return this.userName;
 	}
 
-	public void setPassword(String password) {this.name = password; }
+	public void setPassword(String password) {this.userName = password; }
 
 	public String getPassword() {
 		return this.password;
 	}
 
 	public void setEmail(String email) {
-		this.name = email;
+		this.userName = email;
 	}
 
 	public String getEmail() {
@@ -56,7 +56,7 @@ public class User {
 	}
 
 	public void setAddedLots(String addedLots) {
-		this.name = addedLots;
+		this.userName = addedLots;
 	}
 
 	public String getAddedLots() {
@@ -65,6 +65,6 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "Customer [id=" + id + ", name=" + name + ", email = " + email +", addedLots =" +addedLots+",password ="+password+"]";
+		return "Customer [id=" + id + ", name=" + userName + ", email = " + email +", addedLots =" +addedLots+",password ="+password+"]";
 	}
 }

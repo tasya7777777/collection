@@ -50,6 +50,25 @@ export default {
           console.log(e);
         });
     },
+     create(status) {
+          var data = {
+
+            userName: this.user.userName,
+            email: this.user.email,
+            password: this.user.password
+
+          };
+
+          http
+            .post("/user", data)
+            .then(response => {
+
+              console.log(response.data);
+            })
+            .catch(e => {
+              console.log(e);
+            });
+        },
     deleteUser() {
       http
         .delete("/user/" + this.user.id)
